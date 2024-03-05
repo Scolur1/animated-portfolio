@@ -39,6 +39,8 @@ const sliderVariants = {
   },
 };
 
+
+
 const Hero = () => {
   
   return(
@@ -53,8 +55,12 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>SCOTT LURIE</motion.h2>
           <motion.h1 variants={textVariants}>Web developer and UI designer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>See the Latest Works</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <a href="#Portfolio">
+              <motion.button variants={textVariants} >See the Latest Works</motion.button>
+            </a>
+            <a href="#Contact">
+              <motion.button variants={textVariants} >Contact Me</motion.button>
+            </a>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>

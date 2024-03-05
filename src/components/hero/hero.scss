@@ -5,12 +5,12 @@
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
-  z-index: -1;
+   z-index: 1;
   .wrapper{
     max-width: 1366px;
     height: 100%;
     margin: auto;
-
+    
     .textContainer{
       height: 100%;
       width: 50%;
@@ -18,7 +18,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
-
+      
       @include mobile{
         height: 50%;
         width: 100%;
@@ -34,7 +34,7 @@
 
       h1{
         font-size: 88px;
-
+        z-index: -1;
         @include mobile{
           font-size: 36px;
         }
@@ -50,6 +50,7 @@
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+          z-index: 999;
         }
       }
 
@@ -88,5 +89,6 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    z-index: -1;
   }
 }

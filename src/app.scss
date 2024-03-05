@@ -23,7 +23,11 @@ section{
     height: 100vh;
     scroll-snap-align: center;
 }
-
+#Experience{
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
 .course{
    height: 100vh;
    display: flex;
