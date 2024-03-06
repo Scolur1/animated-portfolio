@@ -4,15 +4,16 @@ import{
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "./experience.scss"
 
 const Experience = () => {
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#3e497a">
+      <VerticalTimeline lineColor="#808080">
         <VerticalTimelineElement 
-        className="vertical-timeline-element--education" 
+        className="vertical-timeline-element--work" 
         date="2020-2022"
-        iconStyle={{background: "#3e497a", color:"#fff"}}
+        iconStyle={{background: "#ffa500", color:"#808080"}}
         icon={
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -25,7 +26,8 @@ const Experience = () => {
           >
           <h3 className="vertical-timeline-element-title">Northeastern Illinois University</h3>
           <h4 className="vertical-timeline-element-subtitle">Computer Science <i>Expected 2024</i></h4>
-          <ul>
+          <br />
+          <ul className="ExpDescriptionList">
             <li>
             GPA: 3.92/4.00 – Dean’s list: Spring 2021, Summer 2021, Fall 2021
             </li>
@@ -37,7 +39,7 @@ const Experience = () => {
         <VerticalTimelineElement 
         className="vertical-timeline-element--education" 
         date="2021-2022"
-        iconStyle={{background: "#3e497a", color:"#fff"}}
+        iconStyle={{background: "#ffa500", color:"#808080"}}
         icon={
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -50,7 +52,8 @@ const Experience = () => {
           >
           <h3 className="vertical-timeline-element-title">Northeastern Illinois University</h3>
           <h4 className="vertical-timeline-element-subtitle">Peer Leader Team-Member</h4>
-          <ul>
+          <br />
+          <ul className="ExpDescriptionList">
             <li>
             Collaborated with a professor on Java concepts to be taught during weekly workshops.
             </li>
@@ -62,7 +65,7 @@ const Experience = () => {
         <VerticalTimelineElement 
         className="vertical-timeline-element--education" 
         date="2022-2023"
-        iconStyle={{background: "#3e497a", color:"#fff"}}
+        iconStyle={{background: "#ffa500", color:"lightgray"}}
         icon={
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -75,7 +78,8 @@ const Experience = () => {
         >
           <h3 className="vertical-timeline-element-title">OccuNomix International LLC.</h3>
           <h4 className="vertical-timeline-element-subtitle">IT Systems Analyst</h4>
-          <ul>
+          <br />
+          <ul className="ExpDescriptionList">
             <li>
             Held administration role of and conducted QA testing for company’s Dynamics 365 F & O instance.
             </li>
@@ -96,7 +100,7 @@ const Experience = () => {
         <VerticalTimelineElement 
         className="vertical-timeline-element--education" 
         date="2022-2024"
-        iconStyle={{background: "#3e497a", color:"#fff"}}
+        iconStyle={{background: "#ffa500", color:"lightgray"}}
         icon={
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -109,7 +113,8 @@ const Experience = () => {
         >
           <h3 className="vertical-timeline-element-title">Mivie LLC.</h3>
           <h4 className="vertical-timeline-element-subtitle">Full-Stack Developer</h4>
-          <ul>
+          <br />
+          <ul className="ExpDescriptionList">
             <li>
               Collaborated on development of a robust web application, leveraging WebFlow, React and Node.js.
             </li>

@@ -1,4 +1,21 @@
-.experience{
-  height: 100vh;
-  scroll-snap-align: center;
+@import "../../app.scss";
+
+.ExpDescriptionList li {
+  margin-bottom: 10px;
+  
+}
+.ExpDescriptionList{
+  list-style-type: none;
+}
+.vertical-timeline-element-subtitle,.vertical-timeline-element-title,.ExpDescriptionList{
+  color: black;
+}
+
+.vertical-timeline-element--education{
+  @include tablet{
+    color: black;
+  }
+  @include mobile{
+    color: black;
+  }
 }

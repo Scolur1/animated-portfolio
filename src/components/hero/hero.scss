@@ -10,6 +10,12 @@
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    @include desktop{
+      padding-left: 50px;
+    }
+    @include mobile{
+      padding-left: 0px;
+    }
     
     .textContainer{
       height: 100%;
