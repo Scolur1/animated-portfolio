@@ -49,9 +49,10 @@ const Weather = () => {
         />
         <button type="submit">Get Weather</button>
       </form>
-        {weatherData && (
+      {(weatherData || error) && (
       <div className="card">
         {error && <p className="errorDisplay">{error}</p>}
+        {weatherData && (
           <>
             <h1 className="cityDisplay">{weatherData.name}</h1>
             <p className="tempDisplay">
@@ -61,9 +62,10 @@ const Weather = () => {
             <p className="descDisplay">{weatherData.weather[0].description}</p>
             <p className="weatherEmoji">{getWeatherEmoji(weatherData.weather[0].id)}</p>
           </>
-      </div>
         )}
-    </div>
+      </div>
+    )}
+  </div>
   );
 }
 
