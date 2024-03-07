@@ -1,13 +1,15 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import {motion, useScroll, useSpring, useTransform} from "framer-motion";
+import { Link } from "react-router-dom";
 
 const items = [
   {
     id:1,
-    title:"React Project",
-    img: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus"
+    title:"React Todo List",
+    img: "/Designer.png",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
+    path: "/TodoList"
   },
   {
     id:2,
@@ -17,15 +19,17 @@ const items = [
   },
   {
     id:3,
-    title:"Vanilla JS App",
+    title:"Weather App",
     img: "https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus"
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
+    path: "/WeatherApp"
   },
   {
     id:4,
     title:"Chess App",
     img: "https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus"
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
+    path: "https://chessviz.web.app/"
   }
 ]
 
@@ -50,7 +54,7 @@ const Single = ({item}) =>{
         <motion.div className="textContainer" style={{y}}>
           <h2 >{item.title}</h2>
           {/* <p>{item.desc}</p> */}
-          <button>Coming Soon</button>
+          <button><Link to={item.path}>{item.path ? "See Demo" : "Coming Soon"}</Link></button>
         </motion.div>
       </div>
     </div>
