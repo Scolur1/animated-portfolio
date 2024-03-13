@@ -1,6 +1,6 @@
 import "./contact.scss";
 import {motion, useInView} from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 
 const variants={
@@ -24,6 +24,24 @@ const Contact = () => {
   const isInView = useInView(ref, {margin:"-100px"});
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Function to update screenWidth state when window is resized
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -101,7 +119,7 @@ const Contact = () => {
         onSubmit={sendEmail}
         initial={{opacity:0}} 
         whileInView={{opacity:1}} 
-        transition={{delay:4, duration:1}}
+        transition={{delay: screenWidth >=500 ? 4 : 0, duration:1}}
       >
         <motion.input type="text" placeholder="Name" variants={variants} name="name"/>
         <motion.input type="text" placeholder="Email" variants={variants} name="email"/>

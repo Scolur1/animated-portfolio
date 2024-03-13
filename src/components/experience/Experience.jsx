@@ -1,4 +1,4 @@
-import React from "react";
+import { useState,useEffect } from "react";
 import{
   VerticalTimeline,
   VerticalTimelineElement,
@@ -7,10 +7,29 @@ import "react-vertical-timeline-component/style.min.css";
 import "./experience.scss"
 
 const Experience = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Function to update screenWidth state when window is resized
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#808080">
-        <VerticalTimelineElement 
+      <VerticalTimeline 
+        lineColor="#808080"
+        animate={screenWidth >= 400 ? true: false}
+      >
+        {/* <VerticalTimelineElement 
         className="vertical-timeline-element--work" 
         date="2020-2022"
         iconStyle={{background: "#ffa500", color:"#808080"}}
@@ -36,9 +55,9 @@ const Experience = () => {
             National Society for Leadership and Success, Member: Fall 2021
             </li>
           </ul>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
         <VerticalTimelineElement 
-        className="vertical-timeline-element--education" 
+        className="vertical-timeline-element--education"
         date="2021-2022"
         iconStyle={{background: "#ffa500", color:"#808080"}}
         icon={
@@ -64,7 +83,7 @@ const Experience = () => {
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
-        className="vertical-timeline-element--education" 
+        className="vertical-timeline-element--education no-animation" 
         date="2022-2023"
         iconStyle={{background: "#ffa500", color:"lightgray"}}
         icon={
@@ -99,7 +118,7 @@ const Experience = () => {
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
-        className="vertical-timeline-element--education" 
+        className="vertical-timeline-element--education no-animation" 
         date="2022-2024"
         iconStyle={{background: "#ffa500", color:"lightgray"}}
         icon={

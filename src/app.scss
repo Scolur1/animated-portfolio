@@ -1,7 +1,9 @@
 html{
-    scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 body{
@@ -16,22 +18,32 @@ a{
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
 section{
     height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
-#Experience{
-    height: fit-content;
-    
+
+#Timeline{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content; 
 }
+
 .course{
    height: 100vh;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
    
    .box{
     width: 200px;

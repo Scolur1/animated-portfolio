@@ -1,8 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "../../app.scss";
 
 .hero{
   height: calc(100vh - 100px);
   overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c0c1d), to(#111132));
+  background: -o-linear-gradient(top, #0c0c1d, #111132);
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
    z-index: 1;
@@ -20,16 +29,25 @@
     .textContainer{
       height: 100%;
       width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       gap: 40px;
       
       @include mobile{
         height: 50%;
         width: 100%;
         gap: 20px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
       }
       h2{
@@ -82,7 +100,8 @@
     img{
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       display: none;
     }
   }

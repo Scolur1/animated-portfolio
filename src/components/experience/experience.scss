@@ -2,13 +2,17 @@
 
 .ExpDescriptionList li {
   margin-bottom: 10px;
-  
+  @include tablet{
+    font-size: small;
+    margin-bottom: 7px;
+  }
 }
 .ExpDescriptionList{
   list-style-type: none;
 }
 .vertical-timeline-element-subtitle,.vertical-timeline-element-title,.ExpDescriptionList{
   color: black;
+
 }
 
 .vertical-timeline-element--education{

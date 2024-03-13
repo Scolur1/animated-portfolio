@@ -1,15 +1,24 @@
 @import "../../app.scss";
 
 .sidebar{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: white;
   color: black;
   
   .bg{
-    z-index:999;
+    z-index:1000;
     position: fixed;
     top:0;
     left: 0;
@@ -24,10 +33,19 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       gap: 20px;
       
       a{
@@ -51,7 +69,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    z-index:999;
+    z-index:1001;
   }
 
 }
