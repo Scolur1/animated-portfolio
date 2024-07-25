@@ -55,7 +55,7 @@ const Single = ({item}) =>{
         <motion.div className="textContainer" style={{y}}>
           <h2 >{item.title}</h2>
           {/* <p>{item.desc}</p> */}
-          <button><Link to={item.path}>{item.path ? "See Demo" : "Coming Soon"}</Link></button>
+          <Link className="demo" to={item.path}>{item.path ? "See Demo" : "Coming Soon"}</Link>
         </motion.div>
       </div>
     </div>
