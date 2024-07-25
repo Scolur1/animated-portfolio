@@ -20,7 +20,7 @@ const items = [
   },
   {
     id:3,
-    title:"ChessViz App",
+    title:"Chess Viz",
     img: "https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=600",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
     path: "https://chessviz.web.app/"

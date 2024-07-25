@@ -48,7 +48,6 @@
     .wrapper{
       max-width: 1366px;
       height: 100%;
-      margin-left: 20px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -61,7 +60,6 @@
       gap: 50px;
 
       @include mobile{
-        margin-left:0px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -82,10 +80,12 @@
         @include mobile{
           width: 100%;
           max-height: 300px;
+          max-width: 375px;
         }
 
         img{
           max-width: 525px;
+          width: 100%;
           height: 100%;
           border-radius: 10px;
           -o-object-fit: cover;
@@ -95,10 +95,10 @@
             max-width: 400px;
           }
           @include mobile{
-            max-width: 800px;
-            border-radius: 0px;
-            -o-object-fit: contain;
-               object-fit: contain;
+            width: 100%;
+            max-width: 375px;
+            -o-object-fit: cover;
+               object-fit: cover;
           }
         }
       }
