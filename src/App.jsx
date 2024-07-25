@@ -20,7 +20,7 @@ const App = () => {
         path="/" 
         element={
           <div>
-            <Cursor/>
+            {/*<Cursor/>*/}
             <section id="Homepage">
               <Navbar/>
               <Hero/>
@@ -39,14 +39,6 @@ const App = () => {
               <Contact/>
             </section>
           </div>
-        }
-      />
-      <Route path="/TodoList" 
-        element={
-          <>
-            <Back/>
-            <ToDoList />
-          </>
         }
       />
       <Route path="/WeatherApp" 
