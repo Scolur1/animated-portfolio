@@ -27,10 +27,9 @@ const items = [
   },
   {
     id:4,
-    title:"Weather App",
+    title:"Next.js Project",
     img: "https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
-    path: "/WeatherApp"
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus"
   }
 ]
 
