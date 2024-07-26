@@ -8,28 +8,28 @@ const items = [
     id:1,
     title:"Every Eats",
     img: "/EveryEats.png",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
+    desc: "Please allow 1 minute for the first search",
     path: "https://everyeats.onrender.com/"
   },
   {
     id:2,
     title:"Mix Master",
     img: "/MixMaster.png",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
+    desc: "Mobile Controls in Development",
     path: "https://mix-master-69a96.web.app/"
   },
   {
     id:3,
     title:"Chess Viz",
     img: "https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus",
+    desc: "Visulizes square control using color gradients for piece count.",
     path: "https://chessviz.web.app/"
   },
   {
     id:4,
     title:"Next.js Project",
     img: "https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, distinctio. Aut cum eum iste voluptas. Praesentium voluptatum fugiat natus voluptates, commodi nesciunt asperiores sed, est, recusandae repellat autem velit minus"
+    desc: "In development"
   }
 ]
 
@@ -53,7 +53,7 @@ const Single = ({item}) =>{
         </div>
         <motion.div className="textContainer" style={{y}}>
           <h2 >{item.title}</h2>
-          {/* <p>{item.desc}</p> */}
+          <p>{item.desc}</p>
           <Link className="demo" to={item.path}>{item.path ? "See Demo" : "Coming Soon"}</Link>
         </motion.div>
       </div>
