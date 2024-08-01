@@ -8,26 +8,26 @@ const items = [
     id:1,
     title:"Every Eats",
     img: "/EveryEats.png",
-    desc: "Please allow 1 minute for the first search",
+    desc: "Please allow 1 minute for the first restaurant search.",
     path: "https://everyeats.onrender.com/"
   },
   {
     id:2,
     title:"Mix Master",
     img: "/MixMaster.png",
-    desc: "Mobile Controls in Development",
+    desc: "Mobile Controls in Development.",
     path: "https://mix-master-69a96.web.app/"
   },
   {
     id:3,
     title:"Chess Viz",
     img: "https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Visulizes square control using color gradients for piece count.",
+    desc: "Visulizes square control using color gradients for piece count. Ability to input Chess.com username coming soon.",
     path: "https://chessviz.web.app/"
   },
   {
     id:4,
-    title:"Next.js Project",
+    title:"React Native Project",
     img: "https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600",
     desc: "In development"
   }
