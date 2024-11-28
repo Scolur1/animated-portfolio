@@ -6,31 +6,25 @@ import { Link } from "react-router-dom";
 const items = [
   {
     id:1,
-    title:"Every Eats",
-    img: "/EveryEats.png",
-    desc: "Please allow 1 minute for the first restaurant search.",
-    path: "https://everyeats.onrender.com/"
+    title:"Mivie",
+    img: "/Mivie.png",
+    desc: "Solo Developer for the Mivie Social Impact Certification Marketing Site.",
+    path: "https://mivie.com/"
   },
   {
     id:2,
-    title:"Mix Master",
-    img: "/MixMaster.png",
-    desc: "Mobile Controls in Development.",
-    path: "https://mix-master-69a96.web.app/"
+    title:"Star Pitch",
+    img: "/starpitchlg.png",
+    desc: "A platform to view and submit startup businesses.",
+    path: "https://startup-review.vercel.app/"
   },
   {
     id:3,
-    title:"Chess Viz",
-    img: "https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Visulizes square control using color gradients for piece count. Ability to input Chess.com username coming soon.",
-    path: "https://chessviz.web.app/"
+    title:"Every Eats",
+    img: "/EveryEats.png",
+    desc: "Please allow 1 minute for the first restaurant search. Example search cities: Skokie, Dallas",
+    path: "https://everyeats.onrender.com/"
   },
-  {
-    id:4,
-    title:"React Native Project",
-    img: "https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "In development"
-  }
 ]
 
 const Single = ({item}) =>{
@@ -49,7 +43,7 @@ const Single = ({item}) =>{
     <div className="container">
       <div className="wrapper">
         <div className="imageContainer" ref={ref}>
-          <img src={item.img} alt="" />
+          <img src={item.img} alt="project image" />
         </div>
         <motion.div className="textContainer" style={{y}}>
           <h2 >{item.title}</h2>
