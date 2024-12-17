@@ -8,21 +8,21 @@ const items = [
     id:1,
     title:"Mivie",
     img: "/Mivie.png",
-    desc: "Solo Developer for the Mivie Social Impact Certification Marketing Site.",
+    desc: "Solo Developer for the Mivie Social Impact Certification Marketing Site. Prototyped with Figma and built with Webflow.",
     path: "https://mivie.com/"
   },
   {
     id:2,
-    title:"Star Pitch",
-    img: "/starpitchlg.png",
-    desc: "A platform to view and submit startup businesses.",
-    path: "https://startup-review.vercel.app/"
+    title:"Topcoat Painters",
+    img: "/TOPCOATLOGO.png",
+    desc: "A marketing website for a professional painting service. Built with Next.js, Tailwind, and Sanity CMS.",
+    path: "https://topcoatpainterschicago.com/"
   },
   {
     id:3,
     title:"Every Eats",
     img: "/EveryEats.png",
-    desc: "Please allow 1 minute for the first restaurant search. Example search cities: Skokie, Dallas",
+    desc: "Please allow 1 minute for the first restaurant search. Example search cities: Skokie, Dallas. Built using the MERN stack.",
     path: "https://everyeats.onrender.com/"
   },
 ]
